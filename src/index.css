@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif, 'Oxygen',
+  width: 100%;
+  font-family: Roboto, sans-serif, 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +20,7 @@ code {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, sans-serif;
 }
 
 section {
@@ -28,16 +29,27 @@ section {
 
 .flexBox {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 }
 
 .flexBox2 {
 	display: flex;
+	justify-content: space-around;
+}
+
+.flexBox3 {
+	display: flex;
 	align-items: center;
+}
+
+.flexBox4 {
+	display: flex;
+	justify-content: flex-start;
 }
 
 #wrapper {
 	min-height: 100%;
+	min-width: 100%;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	grid-template-areas:'header' 'main' 'footer';
@@ -46,32 +58,98 @@ section {
 
 /* - - - - - - Header - - - - - - */
 
-#header {
+header {
+	margin: 0 2%;
 	height: 130px;
 	grid-area: header;
-	background: white;
-	z-index: 5;
-	margin: 0 2%;			
+	background: white;	
+	justify-content: flex-start;		
 }
 
-header a {
-	color: #010A44;
-	font: Roboto 34px bolder;
+header, header nav {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	
+}
 
+nav {
+	height: 130px;
+    width: 100%;
+}
+
+#logo {
+	width: 50px;
+}
+
+header a, button {
+	color: #010A44;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 button {
+	border: none;
 	background: #010A44;
 	padding: 5px;
-	width: 200px;
-	height: 65px;
 	border-radius: 10px;
+	color: white;
 }
 
-#searchField {
-	background: #969595;
-	border-radius: 5px;
-	width: 448px;
+form {
+	position: static;
+	width: auto;
+}
+
+.searchField {
+	display: none;
+	background: #F1F1F1 url('./images/header/searchIcon.png') no-repeat 260px;
+	border-radius: 170px;
+	width: 300px;
+	height: 35px;
+	border: none;
+	padding: 9px;
+}
+
+.revealField {
+	display: block;
+	width: 100%;
+	background: #F1F1F1;
+	z-index: 5;
+}
+
+.revealForm {
+	position: absolute;
+	width: 90%;
+	transition: width 5s 3s;
+}
+
+#searchButton {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+
+@media screen and (min-width: 800px) {
+
+	#logo {
+	width: 80px;
+}
+
+header a, button {
+	font-size: 30px;
+}
+
+.searchField {
+	display: block;
+}
+
+#searchButton {
+	display: none;
+}
 }
 
 
@@ -81,3 +159,12 @@ main {
 	grid-area: main;
 	position: relative;
 }
+
+
+/* - - - - - - Footer- - - - - - */
+
+footer {
+	position: fixed;
+	bottom: 0;
+}
+
