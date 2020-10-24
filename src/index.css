@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif, 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* - - - - - - Layout & General - - - - - - */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+section {
+	clear: both;
+}
+
+.flexBox {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.flexBox2 {
+	display: flex;
+	align-items: center;
+}
+
+#wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:'header' 'main' 'footer';
+}
+
+
+/* - - - - - - Header - - - - - - */
+
+#header {
+	height: 130px;
+	grid-area: header;
+	background: white;
+	z-index: 5;
+	margin: 0 2%;			
+}
+
+header a {
+	color: #010A44;
+	font: Roboto 34px bolder;
+
+}
+
+button {
+	background: #010A44;
+	padding: 5px;
+	width: 200px;
+	height: 65px;
+	border-radius: 10px;
+}
+
+#searchField {
+	background: #969595;
+	border-radius: 5px;
+	width: 448px;
+}
+
+
+/* - - - - - - Main- - - - - - */
+
+main {
+	grid-area: main;
+	position: relative;
+}
