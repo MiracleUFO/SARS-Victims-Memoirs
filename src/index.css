@@ -23,6 +23,14 @@ code {
 	font-family: Roboto, sans-serif;
 }
 
+.text60 {
+	font-size: 60px;
+}
+
+.grayText {
+	color: #0F0E0E;
+}
+
 section {
 	clear: both;
 }
@@ -44,7 +52,17 @@ section {
 
 .flexBox4 {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
+}
+
+.flexBox5 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.flexColumn {
+	display: flex;
+	flex-direction: column;
 }
 
 #wrapper {
@@ -59,8 +77,8 @@ section {
 /* - - - - - - Header - - - - - - */
 
 header {
-	margin: 0 2%;
-	height: 130px;
+	padding: 0 2%;
+	height: 100px;
 	grid-area: header;
 	background: white;	
 	justify-content: flex-start;		
@@ -74,17 +92,24 @@ header, header nav {
 }
 
 nav {
-	height: 130px;
+	height: 100px;
     width: 100%;
 }
 
 #logo {
+	position: relative;
+	top: 8px;
 	width: 50px;
+}
+
+#navTextDiv {
+	width: 70%;
+	justify-content: space-evenly;
 }
 
 header a, button {
 	color: #010A44;
-	font-size: 20px;
+	font-size: 45px;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -97,9 +122,8 @@ button {
 	color: white;
 }
 
-form {
-	position: static;
-	width: auto;
+input:focus {
+	border: none;
 }
 
 .searchField {
@@ -107,7 +131,7 @@ form {
 	background: #F1F1F1 url('./images/header/searchIcon.png') no-repeat 260px;
 	border-radius: 170px;
 	width: 300px;
-	height: 35px;
+	height: 50px;
 	border: none;
 	padding: 9px;
 }
@@ -117,21 +141,25 @@ form {
 	width: 100%;
 	background: #F1F1F1;
 	z-index: 5;
+	transition: width 9s 3s;
 }
 
 .revealForm {
 	position: absolute;
 	width: 90%;
-	transition: width 5s 3s;
 }
 
 #searchButton {
-	display: block;
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 0;
 }
 
+.searchButtonOnReveal {
+	position: fixed;
+	z-index: 6;
+}
 
 @media screen and (min-width: 800px) {
 
@@ -140,7 +168,7 @@ form {
 }
 
 header a, button {
-	font-size: 30px;
+	font-size: 27px;
 }
 
 .searchField {
@@ -149,6 +177,14 @@ header a, button {
 
 #searchButton {
 	display: none;
+}
+
+nav {
+    width: 80%;
+}
+
+#navTextDiv {
+	width: 35%;
 }
 }
 
@@ -166,5 +202,110 @@ main {
 footer {
 	position: fixed;
 	bottom: 0;
+}
+
+
+/* - - - - - - Home- - - - - - */
+
+#home section:first-child {
+	margin-bottom: 90px;
+}
+
+#home article {
+	margin: 100px 5%;
+}
+
+section, section > div {
+	position: relative;
+	clear: both;
+}
+
+#heroPic {
+	width: 100%;
+}
+
+#heroBubble {
+	position: absolute;
+	background: rgba(0,0,0,0.45);
+	width: 150px;
+	height: 150px;
+	border-radius: 75px;
+	color: white;
+	padding: 0;
+	text-align: center;
+	right: 10%;
+	bottom: 20px;
+}
+
+#heroBubble h1 {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+#moreIcon {
+	display: block;
+	width: 50px;
+	position: relative;
+	margin: 0 auto;
+	bottom: 25px;
+}
+
+.homeHeaders {
+	width: 75%;
+	margin: 0 auto;
+	font-size: 50px;
+}
+
+.victimHomeGrid {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: 3.5%;
+    color: white;
+}
+
+.victimHomeGrid > div {
+	background: #0F0E11;
+}
+
+.victimHomeGrid > div > div {
+	padding: 20px;
+}
+
+.victimHomeGrid p {
+	font-weight: 300;
+	padding: 20px 8px;
+}
+
+#statsHome div {
+	
+	width: 150px;
+}
+
+#statsHome h1 {
+	padding-bottom: 20px;
+}
+
+
+@media screen and (min-width: 700px) {
+	#heroBubble {
+		height: 320px;
+		width: 320px;
+		border-radius: 160px;
+		bottom: 95px;
+	}
+
+	#heroBubble h1 {
+	font-size: 3em;
+	}
+
+	#moreIcon {
+		width: 80px;
+		bottom: 50px;
+	}
+
+	.homeHeaders {
+		width: 80%;
+		font-size: 60px;
+	}
 }
 
