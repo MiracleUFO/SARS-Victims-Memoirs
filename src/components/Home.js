@@ -110,27 +110,27 @@ function Home() {
     		</article>
     	</section>
 
-    	<article className='flexBox2' id='statsHome'>
-    		<div className='flexColumn'>
+        <section className='greyDiv flexBox3 flexBox2' id='statsHome'>
+    		  <div className='flexColumn'>
     			<h1 className='text60'>1,223</h1>
     			<p className='greyText'>Cases recorded this year.</p>
-    		</div>
+    		  </div>
 
-    		<div className='flexColumn'>
+    		  <div className='flexColumn'>
     			<h1 className='text60'>906</h1>
     			<p className='greyText'>Cases recorded last year</p>
-    		</div>
+    		  </div>
 
-    		<div className='flexColumn'>
-    			<h1 className='text60'>1,200</h1>
+    		  <div className='flexColumn'>
+                <h1 className='text60'>1,200</h1>
     			<p className='greyText'>Youths reportedly recorded</p>
-    		</div>
+    		  </div>
 
-    		<div className='flexColumn'>
+    		  <div className='flexColumn'>
     			<h1 className='text60'>2,129</h1>
     			<p className='greyText'>Total cases</p>
-    		</div>
-    	</article>
+    		  </div>
+        </section>
     </main>
   );
 }
