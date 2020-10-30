@@ -42,8 +42,22 @@ code {
 	background: #F9F9F9;
 }
 
+.blueDiv {
+	background: #010A44;
+	color: white;
+}
+
+.blackDiv {
+	background: #0F0E11;
+	color: white;
+}
+
 section {
 	clear: both;
+}
+
+img {
+	width: 100%;
 }
 
 .flexBox {
@@ -120,7 +134,7 @@ nav {
 
 header a, button {
 	color: #010A44;
-	font-size: 45px;
+	font-size: 27px;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -139,7 +153,7 @@ input:focus {
 
 .searchField {
 	display: none;
-	background: #F1F1F1 url('./images/header/searchIcon.png') no-repeat 260px;
+	background: #F1F1F1 url('./images/header/searchIconGrey.png') no-repeat 260px;
 	border-radius: 170px;
 	width: 300px;
 	height: 50px;
@@ -165,7 +179,6 @@ input:focus {
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    font-size: 0;
 }
 
 .searchButtonOnReveal {
@@ -177,27 +190,27 @@ input:focus {
 
 	#logo {
 	width: 80px;
-}
+	}
 
-header a, button {
-	font-size: 27px;
-}
+	header a, button {
+	font-size: 30px;
+	}
 
-.searchField {
+	.searchField {
 	display: block;
-}
+	}
 
-#searchButton {
+	#searchButton {
 	display: none;
-}
+	}
 
-nav {
+	nav {
     width: 80%;
-}
+	}
 
-#navTextDiv {
+	#navTextDiv {
 	width: 35%;
-}
+	}
 }
 
 
@@ -213,12 +226,30 @@ main {
 
 footer {
 	height: 200px;
+	width: 100%;
 	grid-area: footer;
-	background: #010A44;
-	color: white;
 	font-size: 20px;
+	padding: 10% 0;
 }
 
+footer section {
+	height: 80%;
+}
+
+#footerContent {
+	display: none;
+}
+
+@media screen and (min-width: 700px) {
+
+	#footerContent {
+		display: flex;
+	}
+
+	#footerContentMobile {
+		display: none;
+	}
+}
 
 /* - - - - - - Home- - - - - - */
 
@@ -285,6 +316,7 @@ section, section > div {
 
 .victimHomeGrid > div > div {
 	padding: 20px;
+	padding-bottom: 0;
 }
 
 .victimHomeGrid p {
@@ -294,17 +326,29 @@ section, section > div {
 
 #statsHome {
 	height: 300px;
-	margin-top: 50px;
+	width: 90%;
+	margin: 50px auto 0;
 }
 
 #statsHome div {
 	width: 150px;
+	text-align: center;
 }
 
 #statsHome h1 {
 	padding-bottom: 20px;
+	font-size: 30px;
 }
 
+#statsHome p {
+	text-align: center;
+}
+
+.date {
+		font-size: 0.7em;
+		color: 	#BCBCBC;
+		padding: 20px 0 !important; 
+}
 
 @media screen and (min-width: 700px) {
 	#heroBubble {
@@ -327,5 +371,46 @@ section, section > div {
 		width: 80%;
 		font-size: 60px;
 	}
+
+	.date {
+		font-size: 1em;
+		color: white;
+	}
+	
 }
 
+
+/* - - - - - - About- - - - - - */
+
+#about {
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+#about div:first-child {
+	width: 25%;
+}
+
+#aboutContentContainer {
+	width: 90%;
+	padding: 50px 5%;
+}
+
+#h1Div {
+	padding-bottom: 20px;
+}
+
+#aboutContent {
+	height: 50%;
+}
+
+#about p {
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	#about h1 {
+	font-size: 40px;
+	}
+}

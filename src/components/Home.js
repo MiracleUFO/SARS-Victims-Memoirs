@@ -19,42 +19,42 @@ function Home() {
     		<article className='victimHomeGrid'>
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
 
 				<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>    			
 
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
 
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
 
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
 
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
@@ -68,68 +68,70 @@ function Home() {
     		<article className='victimHomeGrid'>
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
 
 				<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>    			
 
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
 
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
 
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
     			
     			<div className='flexColumn'>
     				<img src={victim01} alt='Chimela Obi'/> 
-    				<div><h1>Chimela Obi</h1><p>12/07/1994  - 13/01/2019</p> 
+    				<div><h1>Chimela Obi</h1><p className='date'>12/07/1994  - 13/01/2019</p> 
     				<p>Was exthorted and shot by a police on her way to lectures, she’s the only child of her...</p></div>
     				<p className='flexBox5'>Read more</p>
     			</div>
     		</article>
     	</section>
 
-        <section className='greyDiv flexBox3 flexBox2' id='statsHome'>
+        <section className='greyDiv'>
+        <div className='flexBox3 flexBox2' id='statsHome'>
     		  <div className='flexColumn'>
-    			<h1 className='text60'>1,223</h1>
+    			<h1>1,223</h1>
     			<p className='greyText'>Cases recorded this year.</p>
     		  </div>
 
     		  <div className='flexColumn'>
-    			<h1 className='text60'>906</h1>
+    			<h1>906</h1>
     			<p className='greyText'>Cases recorded last year</p>
     		  </div>
 
     		  <div className='flexColumn'>
-                <h1 className='text60'>1,200</h1>
+                <h1>1,200</h1>
     			<p className='greyText'>Youths reportedly recorded</p>
     		  </div>
 
     		  <div className='flexColumn'>
-    			<h1 className='text60'>2,129</h1>
+    			<h1>2,129</h1>
     			<p className='greyText'>Total cases</p>
     		  </div>
+        </div>
         </section>
     </main>
   );
