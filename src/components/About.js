@@ -1,19 +1,22 @@
 import React from 'react';
-import line from '../images/about/line.png'
+import line from '../images/about/line.png';
+
 
 function About() {
+
   return (
-    <main className='flexBox' id='about'>
-    	<div className='blueDiv flexBox3 flexBox4'>
+    <main id='about'>
+        <div className='flexBox' id='aboutCont'>
+    	<section className='blueDiv flexBox3 flexBox4'>
     		<h1>About</h1>
-    	</div>
+    	</section>
 
-    	<div className='blackDiv' id='aboutContentContainer'>
-    		<div id='h1Div'>
-    			<h1>Memoirs </h1><img src={line} alt=''/>
-    		</div>
+    	<section className='blackDiv' id='aboutContentContainer'>
+    		<article id='h1Div'>
+    			<h1>Memoirs </h1><img src={line} alt='' id='h1Line'/>
+    		</article>
 
-    		<div className='flexColumn' id='aboutContent'>
+    		<article className='flexColumn' id='aboutContent'>
     			<p>
     			A web app to serve as a memoir for victims of Police brutality and SARs extrajudicial 
     			killings during the course of living their lives as human beings.
@@ -30,8 +33,33 @@ function About() {
 				This ends up with no one knowing who they were or the impact they had with exception of the 
 				people in their circles/communities
 				</p>
-			</div>
-    	</div>
+			</article>
+    	</section>
+        </div>
+
+        <section className='greyDiv'>
+        <div className='flexBox3 flexBox2' id='statsHome'>
+              <div className='flexColumn'>
+                <h1>1,223</h1>
+                <p className='greyText'>Cases recorded this year.</p>
+              </div>
+
+              <div className='flexColumn'>
+                <h1>906</h1>
+                <p className='greyText'>Cases recorded last year</p>
+              </div>
+
+              <div className='flexColumn'>
+                <h1>1,200</h1>
+                <p className='greyText'>Youths reportedly recorded</p>
+              </div>
+
+              <div className='flexColumn'>
+                <h1>2,129</h1>
+                <p className='greyText'>Total cases</p>
+              </div>
+        </div>
+        </section>
     </main>
   );
 }

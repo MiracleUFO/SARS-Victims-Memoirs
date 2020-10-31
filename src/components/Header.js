@@ -31,7 +31,7 @@ function Header(e) {
 
   return (
     <header className='flexBox2 flexBox3'>
-      <div id='logo'><NavLink to='/'><img src={logo} alt=''/></NavLink></div>
+      <div className='logo'><NavLink to='/'><img src={logo} alt=''/></NavLink></div>
     	<nav className='flexBox2 flexBox3'>
 
       <div className='flexBox3' id='navTextDiv' ref={navTextDiv}>
@@ -45,7 +45,7 @@ function Header(e) {
 			 </form> 
     	</nav>
 
-      <NavLink to='#'><button id='loginBtn'>Login</button> </NavLink>
+      <NavLink to='/'><button id='loginBtn'>Login</button> </NavLink>
     </header>
   );
 }

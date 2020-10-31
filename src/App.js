@@ -9,12 +9,14 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div id='wrapper'>
-      <Header/>
+      <Header/> 
+      <React.StrictMode>
       <Switch>
       <Route exact path='/' component={Home} />
-      <Route path='/About' component={About} />
-      <Route path='/Memoir' component={Memoir} />
+      <Route exact path='/About' component={About} />
+      <Route exact path='/Memoir' component={Memoir} />
       </Switch>
+      </React.StrictMode>
       <Footer/>
     </div>
   );
