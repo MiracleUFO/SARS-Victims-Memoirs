@@ -11,7 +11,7 @@ function Memoir() {
 
     	<div className='flexColumn flexBox3'>
     		<div className='flexColumn'>
-    			<h1 className='text80' className='victimNameHeader'><b>Chiemela </b>  Obi</h1>
+    			<h1 className='text80 victimNameHeader'><b>Chiemela </b>  Obi</h1>
     			<p className='date'>12/07/1994  - 13/01/2019</p>
     		</div>
 
